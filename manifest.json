@@ -8,7 +8,7 @@
 		"default_icon":"police-144.png",
 		"default_popup":"popup.html"
 	},
-	"permissions":["activeTab","http://127.0.0.1:8000/fakenews/add/","http://127.0.0.1:8000/fakenews/check/","tabs","storage"],
+	"permissions":["activeTab","https://1fb95732.ngrok.io/fakenews/add/","https://1fb95732.ngrok.io/fakenews/check/","tabs","storage"],
 	"background":{
 		"scripts":["jquery.min.js","background.js"],
 		"persistent":true
