@@ -74,8 +74,9 @@ function ajax_check(url){
         data: { "url": url},
         success: function(data) {
         	if(data.result){
-        		var reports = String(data.result);
-        		alert("Fake news Alert !!\nReports: num".replace("num",reports))
+        		var reports = String(data.result.reports);
+            		var verifications = String(data.result.verifications);
+        		alert("Fake news Alert !!\nReports: num\nVerifications: verified".replace("num",reports).replace("verified",verifications))
         	}
 
         },
