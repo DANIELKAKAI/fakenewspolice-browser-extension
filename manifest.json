@@ -1,0 +1,16 @@
+{
+	"version":"1.0.0",
+	"manifest_version":2,
+	"name":"Fake news police",
+	"description":"1.0.0",
+	"icons":{"128":"police-144.png","48":"police-48.png"},
+	"browser_action":{
+		"default_icon":"police-144.png",
+		"default_popup":"popup.html"
+	},
+	"permissions":["activeTab","http://127.0.0.1:8000/fakenews/add/","http://127.0.0.1:8000/fakenews/check/","tabs","storage"],
+	"background":{
+		"scripts":["jquery.min.js","background.js"],
+		"persistent":true
+	}
+}
