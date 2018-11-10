@@ -46,7 +46,7 @@ function get_url()
 
 function ajax_report(title,url){
 		 $.ajax({
-      	url: 'http://127.0.0.1:8000/fakenews/add/',
+      	url: 'https://1fb95732.ngrok.io/fakenews/add/',
       	type:"GET",
         dataType: 'json',
         data: { "url": url,"title":title},
@@ -68,7 +68,7 @@ function ajax_report(title,url){
 
 function ajax_check(url){
 		 $.ajax({
-      	url: 'http://127.0.0.1:8000/fakenews/check/',
+      	url: 'https://1fb95732.ngrok.io/fakenews/check/',
       	type:"GET",
         dataType: 'json',
         data: { "url": url},
